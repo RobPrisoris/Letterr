@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Love loveee.</strong>
+                        <p>
+                            Nag gawa ako letter para sayo pero naka html and css kay pangit akong writing HAHAHAH.
+                            im so glad nakaabot ta december and i wish na many more months and years ta loveee
+                            thankful ko na ning abot ka sa ako sa imo ra nako na experience tanan hehehehe pati 
+                            mga giftsss ikaw ray nakahatag sa akoooo heheheh i love you so muchhhh smile na kay i like
+                            to see youuu smilee hehehehehe i miss youu so muchhhh
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const envelope = document.querySelector('.envelope-wrapper');
+          envelope.addEventListener('click', function () {
+            envelope.classList.toggle('flap');
+            
+            // Move the envelope down by changing its translateY property
+            envelope.style.transform = 'translateY(100px)';
+          });
+        });
+      </script>
+</body>
+</html>
